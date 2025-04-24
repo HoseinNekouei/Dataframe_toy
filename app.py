@@ -1,11 +1,11 @@
 import streamlit as st
 import pandas as pd
 
-file_path= '/home/hossein/Documents/chatbot_project/twitter_train_corpus.csv'
+file_path= 'twitter_train_corpus.csv'
 df = pd.read_csv(file_path, nrows=1000)
 
 # Get Query through input box
-user_input= st.text_input('Enter your pandas query using "df", e.g., df[df["label"] == "positive"]')
+user_input= st.text_input('Enter your pandas query using "df", e.g., df[df["label"] == 1]')
 
 query_result = None
 
